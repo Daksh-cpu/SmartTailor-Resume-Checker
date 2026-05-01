@@ -1,6 +1,6 @@
 # 🎯 SmartTailor — AI Resume × Job Description Matcher
 
-SmartTailor is an AI-powered web app built with Python and Streamlit. It uses LangChain and Groq's open-source Llama 3 API to analyze your resume against any job description, scoring your fit and rewriting your experience bullets to pass the ATS.
+🚀 SmartTailor is an AI-powered web app built with Python and Streamlit. It uses LangChain and Groq's open-source Llama 3 API to analyze your resume against any job description, scoring your fit and rewriting your experience bullets to pass the ATS.
 
 ---
 
