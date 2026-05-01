@@ -1,7 +1,6 @@
 streamlit
 langchain
-langchain-openai
-openai
+langchain-groq
 PyPDF2
 python-dotenv
 requests

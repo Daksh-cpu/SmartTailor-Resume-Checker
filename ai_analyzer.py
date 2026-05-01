@@ -9,7 +9,7 @@ Runs three LangChain + GPT-4o-mini chains:
 import json
 import os
 from dotenv import load_dotenv
-from langchain_openai import ChatOpenAI
+from langchain_groq import ChatGroq
 from langchain_core.prompts import ChatPromptTemplate
 
 try:
@@ -27,17 +27,17 @@ def get_llm():
     api_key = None
     if _STREAMLIT_AVAILABLE:
         try:
-            api_key = st.secrets.get("OPENAI_API_KEY", None)
+            api_key = st.secrets.get("GROQ_API_KEY", None)
         except Exception:
             pass
     if not api_key:
-        api_key = os.getenv("OPENAI_API_KEY")
-    if not api_key or api_key.startswith("sk-your"):
-        raise ValueError("Missing OpenAI API key. Please set it in your .env file or Streamlit Secrets.")
-    return ChatOpenAI(
-        model="gpt-4o-mini",
+        api_key = os.getenv("GROQ_API_KEY")
+    if not api_key:
+        raise ValueError("Missing Groq API key. Please set GROQ_API_KEY in your .env file or Streamlit Secrets.")
+    return ChatGroq(
+        model="llama3-8b-8192",
         temperature=0.3,
-        openai_api_key=api_key,
+        groq_api_key=api_key,
     )
 
 
