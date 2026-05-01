@@ -12,14 +12,28 @@ from dotenv import load_dotenv
 from langchain_openai import ChatOpenAI
 from langchain_core.prompts import ChatPromptTemplate
 
+try:
+    import streamlit as st
+    _STREAMLIT_AVAILABLE = True
+except ImportError:
+    _STREAMLIT_AVAILABLE = False
+
 load_dotenv()
 
 # ── Model setup ──────────────────────────────────────────────────────────────
 
 def get_llm():
-    api_key = os.getenv("OPENAI_API_KEY")
+    # Try Streamlit Cloud secrets first, then fall back to local .env
+    api_key = None
+    if _STREAMLIT_AVAILABLE:
+        try:
+            api_key = st.secrets.get("OPENAI_API_KEY", None)
+        except Exception:
+            pass
+    if not api_key:
+        api_key = os.getenv("OPENAI_API_KEY")
     if not api_key or api_key.startswith("sk-your"):
-        raise ValueError("Missing OpenAI API key. Please set it in your .env file.")
+        raise ValueError("Missing OpenAI API key. Please set it in your .env file or Streamlit Secrets.")
     return ChatOpenAI(
         model="gpt-4o-mini",
         temperature=0.3,
