@@ -70,7 +70,9 @@ SmartTailor-Resume-Checker/
 ├── resume_parser.py        # PDF/TXT extraction utility
 ├── jd_scraper.py           # Job URL scraping tool
 ├── requirements.txt        # Python dependencies
-└── .gitignore
+├── .env                    # API keys (not tracked in git)
+├── .gitignore              # Git ignore rules
+└── README.md               # Project documentation
 ```
 
 ---
