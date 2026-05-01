@@ -35,7 +35,7 @@ def get_llm():
     if not api_key:
         raise ValueError("Missing Groq API key. Please set GROQ_API_KEY in your .env file or Streamlit Secrets.")
     return ChatGroq(
-        model="llama3-8b-8192",
+        model="llama-3.1-8b-instant",
         temperature=0.3,
         groq_api_key=api_key,
     )
