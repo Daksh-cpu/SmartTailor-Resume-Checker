@@ -25,7 +25,7 @@ SmartTailor is an AI-powered web app built with Python and Streamlit. It uses La
 
 ## 🚀 Live Demo
 
-**[Click here to view the live app on Streamlit Cloud](https://share.streamlit.io/)** *(Replace with your actual Streamlit link)*
+**[Click here to view the live app on Streamlit Cloud](https://smarttailor-resume-checker-ob3vrdy4eqyf2ukjye43nc.streamlit.app/)**
 
 ---
 
