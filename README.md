@@ -34,29 +34,36 @@
 Want to run it locally? Follow these steps:
 
 ### 1. Clone the repository
+
 ```bash
 git clone https://github.com/Daksh-cpu/SmartTailor-Resume-Checker.git
 cd SmartTailor-Resume-Checker
 ```
 
 ### 2. Install dependencies
+
 Make sure you have Python 3.9+ installed.
+
 ```bash
 pip install -r requirements.txt
 ```
 
 ### 3. Set up your API Key
+
 This app uses the free Groq API. Get a key at [console.groq.com](https://console.groq.com/).
 
 Create a `.env` file in the root directory and add:
+
 ```env
 GROQ_API_KEY="gsk_your_api_key_here"
 ```
 
 ### 4. Run the app
+
 ```bash
 streamlit run app.py
 ```
+
 The app will automatically open in your browser at `http://localhost:8501`.
 
 ---
@@ -78,4 +85,5 @@ SmartTailor-Resume-Checker/
 ---
 
 ## 🤝 Contributing
+
 Feel free to open issues or submit pull requests. If you're blocked from scraping certain job boards (like LinkedIn or Indeed), pasting the plain text directly into the app will always work.

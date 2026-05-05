@@ -79,10 +79,6 @@ main {
 }
 
 
-to   { transform: translate(-50%,-50%) rotateX(75deg) rotateZ(360deg); }
-
-
-/* Hero text */
 .hero-badge {
   display: inline-block;
   background: rgba(167,139,250,.15);
