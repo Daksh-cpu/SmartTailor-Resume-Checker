@@ -79,7 +79,8 @@ html, body, [class*="css"] {
 ══════════════════════════════════════════ */
 .hero {
   text-align: center;
-  padding: 3rem 1rem 1.5rem;
+  padding: 1rem 1rem 1.5rem;
+  margin-top: -2.5rem;
   position: relative;
 }
 
@@ -329,36 +330,29 @@ hr { border-color: rgba(255, 255, 255, 0.08) !important; }
 ══════════════════════════════════════════ */
 
 .scene-wrap {
-  perspective: 900px;
-  margin: 0 auto 2.5rem;
+  perspective: 1200px;
   position: relative;
-  width: 320px;
-  height: 320px;
-}
-.cube-anchor {
-  position: absolute;
-  top: 50%; left: 50%;
-  transform-style: preserve-3d;
-  /* Tilt the entire group so rings and cube share the exact same 3D tilt! */
-  transform: rotateX(-20deg);
+  width: 100%;
+  height: 300px;
+  margin: 0 auto 1.5rem;
 }
 .scene {
   position: absolute;
   top: 50%; left: 50%;
-  /* Shift DOWN by 20px to counteract perspective illusion (center is -45, plus 25 down = -20) */
-  margin-top: -20px;
-  margin-left: -45px;
-  width: 90px; height: 90px;
+  margin-top: -55px;
+  margin-left: -55px;
+  width: 110px; height: 110px;
   transform-style: preserve-3d;
   animation: spinCube 8s linear infinite;
+  z-index: 2;
 }
 @keyframes spinCube {
-  from { transform: rotateY(0deg); }
-  to   { transform: rotateY(360deg); }
+  from { transform: rotateX(-15deg) rotateY(0deg); }
+  to   { transform: rotateX(-15deg) rotateY(360deg); }
 }
 .face {
   position: absolute;
-  width: 90px; height: 90px;
+  width: 110px; height: 110px;
   border: 2px solid rgba(167, 139, 250, 0.5);
   background: rgba(167, 139, 250, 0.07);
   -webkit-backdrop-filter: blur(6px);
@@ -366,39 +360,43 @@ hr { border-color: rgba(255, 255, 255, 0.08) !important; }
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   box-shadow:
     inset 0 0 15px rgba(167, 139, 250, 0.15),
     0 0 20px rgba(167, 139, 250, 0.08);
 }
-.face.front  { transform: translateZ(45px); }
-.face.back   { transform: rotateY(180deg) translateZ(45px); }
-.face.left   { transform: rotateY(-90deg) translateZ(45px); }
-.face.right  { transform: rotateY(90deg)  translateZ(45px); }
-.face.top    { transform: rotateX(90deg)  translateZ(45px); }
-.face.bottom { transform: rotateX(-90deg) translateZ(45px); }
+.face.front  { transform: translateZ(55px); }
+.face.back   { transform: rotateY(180deg) translateZ(55px); }
+.face.left   { transform: rotateY(-90deg) translateZ(55px); }
+.face.right  { transform: rotateY(90deg)  translateZ(55px); }
+.face.top    { transform: rotateX(90deg)  translateZ(55px); }
+.face.bottom { transform: rotateX(-90deg) translateZ(55px); }
 
 .halo {
   position: absolute;
   top: 50%; left: 50%;
-  /* 90deg makes it flat on the X-Z plane, perfectly aligned with the cube's equator */
-  transform: translate(-50%, -50%) rotateX(90deg);
-  width: 280px; height: 280px;
+  margin-top: -205px;
+  margin-left: -205px;
+  width: 410px; height: 410px;
   border-radius: 50%;
   border: 2px solid rgba(96, 165, 250, 0.4);
+  transform: rotateX(60deg);
   animation: spinRing 6s linear infinite;
   box-shadow: 0 0 30px rgba(96, 165, 250, 0.25);
   pointer-events: none;
+  z-index: 1;
 }
 .halo.halo-2 {
-  width: 360px; height: 360px;
+  width: 510px; height: 510px;
+  margin-top: -255px;
+  margin-left: -255px;
   border-color: rgba(167, 139, 250, 0.25);
   animation-direction: reverse;
   animation-duration: 9s;
 }
 @keyframes spinRing {
-  from { transform: translate(-50%, -50%) rotateX(90deg) rotateZ(0deg); }
-  to   { transform: translate(-50%, -50%) rotateX(90deg) rotateZ(360deg); }
+  from { transform: rotateX(60deg) rotateZ(0deg); }
+  to   { transform: rotateX(60deg) rotateZ(360deg); }
 }
 
 
