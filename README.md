@@ -111,8 +111,6 @@ We welcome contributions! Whether it's adding new scraping fallbacks or enhancin
 ---
 
 <div align="center">
-  <img src="smarttailor_banner.png" alt="SmartTailor Banner" width="100%" />
-  <br />
   <p>Built with ❤️ by <a href="https://github.com/Daksh-cpu">Daksh</a></p>
-  <img src="https://komarev.com/ghpvc/?username=Daksh-cpu&repo=SmartTailor-Resume-Checker&label=Repository%20views&color=0e75b6&style=flat" alt="Views" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Daksh-cpu.SmartTailor-Resume-Checker" alt="Views" />
 </div>
