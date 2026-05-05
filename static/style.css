@@ -85,15 +85,20 @@ html, body, [class*="css"] {
 
 /* ── 3-D rotating cube ── */
 .scene-wrap {
-  perspective: 800px;
-  margin-bottom: 2.5rem;
+  perspective: 900px;
+  margin: 0 auto 2.5rem;
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 200px;
+  /* Fixed size so all children share the same reference point */
+  width: 320px;
+  height: 320px;
 }
+/* Cube: absolutely centered in scene-wrap */
 .scene {
+  position: absolute;
+  top: 50%; left: 50%;
+  /* Offset by half cube dimensions so the cube's own center = wrap's center */
+  margin-top: -35px;
+  margin-left: -60px;
   width: 120px; height: 120px;
   transform-style: preserve-3d;
   animation: spinCube 8s linear infinite;
@@ -124,21 +129,22 @@ html, body, [class*="css"] {
 .face.top    { transform: rotateX(90deg)  translateZ(60px); }
 .face.bottom { transform: rotateX(-90deg) translateZ(60px); }
 
-/* Halo rings */
+/* Halo rings: also absolutely centered in scene-wrap */
 .halo {
   position: absolute;
   top: 50%; left: 50%;
   transform: translate(-50%, -50%) rotateX(75deg);
-  width: 220px; height: 220px;
+  /* Large enough to encircle the cube's 120px face + 60px depth */
+  width: 240px; height: 240px;
   border-radius: 50%;
-  border: 2px solid rgba(96, 165, 250, 0.3);
+  border: 2px solid rgba(96, 165, 250, 0.4);
   animation: spinRing 6s linear infinite;
-  box-shadow: 0 0 30px rgba(96, 165, 250, 0.2);
+  box-shadow: 0 0 30px rgba(96, 165, 250, 0.25);
   pointer-events: none;
 }
 .halo.halo-2 {
-  width: 280px; height: 280px;
-  border-color: rgba(167, 139, 250, 0.2);
+  width: 300px; height: 300px;
+  border-color: rgba(167, 139, 250, 0.25);
   animation-direction: reverse;
   animation-duration: 9s;
 }
