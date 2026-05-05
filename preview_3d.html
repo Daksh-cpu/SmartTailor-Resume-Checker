@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="SmartTailor — AI-powered resume × job description matcher. Score your fit, find the gaps, and rewrite your bullets in seconds."/>
+  <title>SmartTailor — 3D Animation Preview</title>
+  <link rel="stylesheet" href="preview_3d.css"/>
+</head>
+<body>
+
+  <!-- Fixed background layers -->
+  <div id="bg-canvas"></div>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+  <canvas id="particle-canvas"></canvas>
+
+  <main>
+
+    <!-- ── HERO ── -->
+    <section class="hero">
+
+      <!-- 3-D cube + halo rings -->
+      <div class="scene-wrap">
+        <div class="halo"></div>
+        <div class="halo halo-2"></div>
+        <div class="scene">
+          <div class="face front">🎯</div>
+          <div class="face back">🤖</div>
+          <div class="face left">📄</div>
+          <div class="face right">✨</div>
+          <div class="face top">💡</div>
+          <div class="face bottom">🚀</div>
+        </div>
+      </div>
+
+      <div class="hero-badge">AI-Powered Career Tool</div>
+      <h1 class="hero-title">SmartTailor</h1>
+      <p class="hero-sub">
+        AI-powered resume × job description matcher. Score your fit, find the gaps,
+        and rewrite your bullets — in seconds.
+      </p>
+
+      <div class="hero-cta">
+        <a href="#" class="btn-primary">⚡ Analyze My Resume</a>
+        <a href="#features" class="btn-outline">Learn More →</a>
+      </div>
+
+      <div class="scroll-hint">
+        <span>Scroll</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="6 9 12 15 18 9"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ── STATS ── -->
+    <div class="stats-row reveal">
+      <div class="stat">
+        <div class="stat-num">95%</div>
+        <div class="stat-label">Match Accuracy</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">&lt;20s</div>
+        <div class="stat-label">Analysis Time</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">3×</div>
+        <div class="stat-label">More Interview Calls</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">100%</div>
+        <div class="stat-label">AI Powered</div>
+      </div>
+    </div>
+
+    <!-- ── FEATURES ── -->
+    <section class="section" id="features">
+      <p class="section-label reveal">What We Offer</p>
+      <h2 class="section-title reveal">Everything you need to land the job</h2>
+      <p class="section-sub reveal">Powered by GPT-4o-mini and LangChain to give you an unfair advantage.</p>
+
+      <div class="cards">
+        <div class="card reveal">
+          <div class="card-icon purple">🎯</div>
+          <h3>Match Score</h3>
+          <p>Get an instant percentage score showing how well your resume aligns with any job description.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon blue">🔍</div>
+          <h3>Gap Analysis</h3>
+          <p>Pinpoint every missing keyword and skill the recruiter is looking for, ranked by importance.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon green">✍️</div>
+          <h3>AI Bullet Rewriter</h3>
+          <p>Auto-rewrite your experience bullets to be ATS-optimised and tailored to the specific role.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon purple">⚡</div>
+          <h3>Instant Analysis</h3>
+          <p>Full analysis in under 20 seconds. Paste a JD or drop a URL — we handle the rest.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon blue">📊</div>
+          <h3>Strength Report</h3>
+          <p>See exactly what's working in your resume so you know what to keep and highlight.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon green">🔗</div>
+          <h3>URL Scraping</h3>
+          <p>Paste a job posting URL and we'll automatically extract the description for analysis.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── HOW IT WORKS ── -->
+    <section class="section">
+      <p class="section-label reveal">Simple Process</p>
+      <h2 class="section-title reveal">How It Works</h2>
+      <p class="section-sub reveal">Three steps to a perfectly tailored resume.</p>
+
+      <div class="steps">
+        <div class="step reveal">
+          <div class="step-num">1</div>
+          <div class="step-body">
+            <h4>Upload Your Resume</h4>
+            <p>Drag &amp; drop a PDF or TXT resume. We extract your experience, skills, and bullets automatically.</p>
+          </div>
+        </div>
+        <div class="step reveal">
+          <div class="step-num">2</div>
+          <div class="step-body">
+            <h4>Add the Job Description</h4>
+            <p>Paste the JD directly or drop a job posting URL. SmartTailor scrapes and parses it for you.</p>
+          </div>
+        </div>
+        <div class="step reveal">
+          <div class="step-num">3</div>
+          <div class="step-body">
+            <h4>Get Your Report</h4>
+            <p>Receive your match score, gap table, strengths, weaknesses, and AI-rewritten bullets in seconds.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>SmartTailor — Powered by <span>GPT-4o-mini</span> &amp; <span>LangChain</span> 🤖</p>
+    <small>This is a preview page for the 3D animation concept.</small>
+  </footer>
+
+  <script src="preview_3d.js"></script>
+</body>
+</html>
