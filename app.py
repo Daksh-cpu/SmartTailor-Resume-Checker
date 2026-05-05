@@ -29,6 +29,11 @@ st.markdown(f"<style>{_css}</style>", unsafe_allow_html=True)
 # ── Inject CSS-animated background orbs (pure CSS, no JS needed) ─────────────
 
 st.markdown("""
+<div class="stars-bg">
+  <div class="stars"></div>
+  <div class="stars2"></div>
+  <div class="stars3"></div>
+</div>
 <div class="st-orb orb-1"></div>
 <div class="st-orb orb-2"></div>
 <div class="st-orb orb-3"></div>
@@ -40,15 +45,17 @@ st.markdown("""
 st.markdown("""
 <div class="hero">
   <div class="scene-wrap">
-    <div class="halo"></div>
-    <div class="halo halo-2"></div>
-    <div class="scene">
-      <div class="face front">🎯</div>
-      <div class="face back">🤖</div>
-      <div class="face left">📄</div>
-      <div class="face right">✨</div>
-      <div class="face top">💡</div>
-      <div class="face bottom">🚀</div>
+    <div class="cube-anchor">
+      <div class="halo"></div>
+      <div class="halo halo-2"></div>
+      <div class="scene">
+        <div class="face front">🎯</div>
+        <div class="face back">🤖</div>
+        <div class="face left">📄</div>
+        <div class="face right">✨</div>
+        <div class="face top">💡</div>
+        <div class="face bottom">🚀</div>
+      </div>
     </div>
   </div>
   <div class="hero-badge">AI-Powered Career Tool</div>
