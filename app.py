@@ -26,18 +26,14 @@ _css_path = Path(__file__).parent / "static" / "style.css"
 _css = _css_path.read_text(encoding="utf-8")
 st.markdown(f"<style>{_css}</style>", unsafe_allow_html=True)
 
-# ── Inject background elements + animation JS ─────────────────────────────────
+# ── Inject CSS-animated background orbs (pure CSS, no JS needed) ─────────────
 
-_js_path = Path(__file__).parent / "static" / "animation.js"
-_js = _js_path.read_text(encoding="utf-8")
-
-st.markdown(f"""
-<canvas id="st-particle-canvas"></canvas>
+st.markdown("""
 <div class="st-orb orb-1"></div>
 <div class="st-orb orb-2"></div>
 <div class="st-orb orb-3"></div>
-<script>{_js}</script>
 """, unsafe_allow_html=True)
+
 
 # ── Hero Header ───────────────────────────────────────────────────────────────
 
