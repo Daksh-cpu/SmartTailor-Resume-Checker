@@ -1,4 +1,10 @@
-# <div align="center">🎯 SmartTailor</div>
+# <div align="center">🎯 SmartTailor — AI Resume × Job Description Matcher</div>
+
+<div align="center">
+  <img src="app_preview.png" alt="SmartTailor Live Preview" width="100%" style="border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);" />
+</div>
+
+<br />
 
 <div align="center">
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
@@ -7,14 +13,7 @@
   <img src="https://img.shields.io/badge/Groq_Cloud-f25022?style=for-the-badge&logo=fastapi&logoColor=white" />
 </div>
 
-<br />
-
 <div align="center">
-  <img src="smarttailor_banner.png" alt="SmartTailor Banner" width="100%" />
-</div>
-
-<div align="center">
-  <h3>AI-Powered Resume × Job Description Matcher</h3>
   <p><i>Stop guessing. Start tailoring. Pass the ATS with a high-fidelity AI analyzer.</i></p>
   
   **[🚀 View Live Demo](https://smarttailor-resume-checker-ob3vrdy4eqyf2ukjye43nc.streamlit.app/)**
@@ -112,6 +111,8 @@ We welcome contributions! Whether it's adding new scraping fallbacks or enhancin
 ---
 
 <div align="center">
+  <img src="smarttailor_banner.png" alt="SmartTailor Banner" width="100%" />
+  <br />
   <p>Built with ❤️ by <a href="https://github.com/Daksh-cpu">Daksh</a></p>
-  <img src="https://view-counter.api.fnkr.net/v1/counter/github/Daksh-cpu/SmartTailor-Resume-Checker" alt="Views" />
+  <img src="https://komarev.com/ghpvc/?username=Daksh-cpu&repo=SmartTailor-Resume-Checker&label=Repository%20views&color=0e75b6&style=flat" alt="Views" />
 </div>
